@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(home1.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clearfix:after{
+content: ".";
+visibility: hidden;
+display: block;
+height: 0;
+clear: both;
+}
+.row{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.logo{
+    margin-top: 25px;
+    height: 120px;
+    width: auto;
+    float: left;
+}
+.main-div{
+    float: right;
+    margin-top: 65px;
+}
+.main-div li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+}
+.main-div li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-div li a:hover{
+    border-bottom: 2px solid #bf55ec;
+
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: #fff;
+    word-spacing: 3px;
+    font-size: 240%;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+
+}
+.btn{
+    display: inline;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    border: 1px solid #bf55ec;
+    margin-right: 15px;
+
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+.colorchange{
+    animation: abc 1s infinite;
+}
+@keyframes abc{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: #fff;}
+    100%{color: #bf55ec;}
+}
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and(max-width:998px){
+h1{
+    font-size:200%;
+}
+}
+@media only screen and(max-width:768px){
+h1{
+    font-size: 180%;}
+    .main-div{display: none;}
+}
